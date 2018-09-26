@@ -4,16 +4,37 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "integrationTest": "node ./node_modules/mocha/bin/mocha test/integration/main.test.js --reporter spec",
+    "test": "node ./node_modules/mocha/bin/mocha test/unit/*.test.js --reporter spec",
+    "start": "node index.js",
+    "migrate:make": "./node_modules/.bin/knex migrate:make",
+    "migrate:latest": "./node_modules/.bin/knex migrate:latest",
+    "migrate:rollback": "./node_modules/.bin/knex migrate:rollback",
+    "seed:make": "./node_modules/.bin/knex seed:make",
+    "seed:run": "./node_modules/.bin/knex seed:run"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/waild/LohikaNodeJSCourse_HW_S7_ServiceIntegration.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/waild/LohikaNodeJSCourse_HW_S7_ServiceIntegration/issues"
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "knex": "^0.15.2",
+    "pg": "^7.4.3",
+    "ajv": "6.5.3"
   },
-  "homepage": "https://github.com/waild/LohikaNodeJSCourse_HW_S7_ServiceIntegration#readme"
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "chai": "^4.1.2",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "mocha": "^5.2.0",
+    "sinon": "^6.3.4",
+    "supertest": "^3.3.0"
+  }
 }
