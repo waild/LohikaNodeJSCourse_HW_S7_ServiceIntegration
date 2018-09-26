@@ -1,0 +1,19 @@
+{
+  "name": "lohikanodejscourse_hw_s7_serviceintegration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waild/LohikaNodeJSCourse_HW_S7_ServiceIntegration.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waild/LohikaNodeJSCourse_HW_S7_ServiceIntegration/issues"
+  },
+  "homepage": "https://github.com/waild/LohikaNodeJSCourse_HW_S7_ServiceIntegration#readme"
+}
